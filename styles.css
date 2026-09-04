@@ -1,8 +1,38 @@
 h1{
     text-align: center;
 }
-h6{
+h2{
     text-align: center;
     font-size: 24px;
     margin: 10px;
+}
+header{
+    align-items: center;
+    display: flex;
+    background-color: rgb(151, 151, 151);
+}
+input{
+    align-items: right;
+    width: 250px;
+}
+
+.buscador{
+    justify-content: center;
+    background-color: rgb(255, 118, 39);
+}
+.logoPlaceholder{
+    font-family: sans-serif;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(255, 118, 39);
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+.barraLateral{
+    width: 150px;
+    height: auto;
+    background-color: violet;
 }
