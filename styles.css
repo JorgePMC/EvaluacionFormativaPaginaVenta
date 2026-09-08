@@ -1,11 +1,13 @@
 h1{
     text-align: center;
 }
+
 h2{
     text-align: center;
     font-size: 24px;
     margin: 10px;
 }
+
 header{
     align-items: center;
     display: flex;
@@ -13,6 +15,7 @@ header{
     justify-content: space-between;
     padding: 10px 20px;
 }
+
 input{
     width: 250px;
     padding: 5px;
@@ -33,6 +36,7 @@ input{
     justify-content: center;
     background-color: rgb(255, 118, 39);
 }
+
 .logoPlaceholder{
     font-family: sans-serif;
     text-align: center;
@@ -90,8 +94,42 @@ input{
     display: flex;
     justify-content: center;
 }
+
 .barraLateral{
     width: 150px;
     height: auto;
     background-color: #eaeaea;
+}
+.galeria-trailers {
+    background-color: #292929;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.trailer {
+    background-color: #eaeaea; 
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-trailer {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+footer{
+    background-color: rgb(255, 118, 39);
+    color: white;
+    padding: 20;
+    text-align: center;
 }
