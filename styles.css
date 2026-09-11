@@ -17,8 +17,9 @@ header{
 }
 
 input{
-    width: 250px;
+    width: 100px;
     padding: 5px;
+    flex-grow: 1;
 }
 
 .iconos-header {
@@ -34,18 +35,22 @@ input{
 
 .buscador{
     justify-content: center;
-    background-color: rgb(255, 118, 39);
+    background-color: #ff7627;
 }
 
-.logoPlaceholder{
-    font-family: sans-serif;
-    text-align: center;
-    width: 100px;
-    height: 30px;
-    background-color: rgb(255, 118, 39);
+.logo{
+    display: flex;
+    align-items: Right;
+    text-decoration: none; /*evita la linea de los links*/
 }
 
-.galeria-productos {
+.logo img{
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.galeria-productos { /*contenedor de productos*/
     display: flex;
     justify-content: center; 
     gap: 30px; 
@@ -95,10 +100,25 @@ input{
     justify-content: center;
 }
 
+.centrar-body{
+    flex-grow: 1;
+    padding: 20px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor-pagina{
+    display: flex;
+}
+
 .barraLateral{
-    width: 150px;
-    height: auto;
-    background-color: #eaeaea;
+    width: 175px;
+    background-color: #b3b3b3;
+    padding: 15px;             
+    box-sizing: border-box;
 }
 .galeria-trailers {
     background-color: #292929;

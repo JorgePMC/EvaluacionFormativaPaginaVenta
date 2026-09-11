@@ -8,78 +8,93 @@
 </head>
     <body>
         <header>
-            <div class="logoPlaceholder">Placeholder</div>
+            <a href="index.html" class="logo"><img src="img/logoTa.png" alt="Logo de la tienda T A"></a>
             <input type="text" id="taskInput" placeholder="Ingrese un nombre a buscar">
             <div class="iconos-header">
-                <a href="registro.html">
-                    <img src="img/usuario.png" alt="Registro/Sesión" class="icono">
-                </a>
-                <a href="carrito.html">
-                    <img src="img/carrito-de-compras.png" alt="Carrito de compras" class="icono">
-                </a>
+                <a href="registro.html"><img src="img/usuario.png" alt="Registro/Sesión" class="icono"></a>
+                <a href="carrito.html"><img src="img/carrito-de-compras.png" alt="Carrito de compras" class="icono"></a>
             </div>
         </header>
-        <section>
-            <h1>Bienvenido a la tienda A</h1>
-            <h2>Donde encontraras Videojuegos, mangas y demas...</h2>
-        </section>
 
-        <section>
-            <h1>NOVEDADES!!!</h1>
-            <div class="galeria-productos">
-                
-                <div class="producto">
-                    <img src="img/61m+z+XRvZL._AC_SL1024_.jpg" alt="Producto 1" class="img-producto">
-                    <h3>Zelda Tears Of The Kindom</h3>
-                    <p>Accion, Mundo abierto, Supervivencia...</p>
-                    <p>Precio: $45.000</p>
-                    <button class="btn-favorito">Añadir a Favoritos ❤️</button>
-                    <button class="btn-carrito">Al Carrito 🛒</button>
-                </div>
+        <div class="contenedor-pagina">
+            <aside class="barraLateral">
+                <nav>
+                    <h2>Secciones</h2>
+                    <ul>
+                        <a href="videojuegos.html"><h3>Videojuegos</h3></a>
+                        <h3>Mangas</h3>
+                        <h3>Figuras</h3>
+                    </ul>
+                </nav>
+            </aside>
+            
+            <main class="centrar-body">
+                <section>
+                    <h1>Bienvenido a la tienda A</h1>
+                    <h2>Donde encontraras Videojuegos, mangas y demas...</h2>
+                </section>
 
-                <div class="producto">
-                    <img src="img/some-game-covers-that-are-more-uniform-and-suited-for-gog-v0-m2heclhc2yp61.png" alt="Producto 2" class="img-producto">
-                    <h3>Yakuza 0</h3>
-                    <p>Beat 'em up, Accion, Minijuegos...</p>
-                    <p>Precio: $20.000</p>
-                    <button class="btn-favorito">Añadir a Favoritos ❤️</button>
-                    <button class="btn-carrito">Al Carrito 🛒</button>
-                </div>
+                <section>
+                    <h1>NOVEDADES!!!</h1>
+                    <div class="galeria-productos">
+                        
+                        <div class="producto">
+                            <img src="img/61m+z+XRvZL._AC_SL1024_.jpg" alt="Producto 1" class="img-producto">
+                            <h3>Zelda Tears Of The Kindom</h3>
+                            <p>Accion, Mundo abierto, Supervivencia...</p>
+                            <p>Precio: $45.000</p>
+                            <button class="btn-favorito">Añadir a Favoritos ❤️</button>
+                            <button class="btn-carrito">Al Carrito 🛒</button>
+                        </div>
 
-                <div class="producto">
-                    <img src="img/3643384-nier-automata-become-as-gods-edition-xbox-one-front-cover.jpg" alt="Producto 3" class="img-producto">
-                    <h3>Nier Automata BECOME AS GODS Edition
-                    </h3>
-                    <p>Beat 'em up, Accion, Mundo semi abierto...</p>
-                    <p>Precio: $35.000</p>
-                    <button class="btn-favorito">Añadir a Favoritos ❤️</button>
-                    <button class="btn-carrito">Al Carrito 🛒</button>
-                </div>
-            </div>
-        </section>
+                        <div class="producto">
+                            <img src="img/some-game-covers-that-are-more-uniform-and-suited-for-gog-v0-m2heclhc2yp61.png" alt="Producto 2" class="img-producto">
+                            <h3>Yakuza 0</h3>
+                            <p>Beat 'em up, Accion, Minijuegos...</p>
+                            <p>Precio: $20.000</p>
+                            <button class="btn-favorito">Añadir a Favoritos ❤️</button>
+                            <button class="btn-carrito">Al Carrito 🛒</button>
+                        </div>
 
-        <section>
-            <nav class="barraLateral">
-                <h2>Secciones</h2>
-                <a href="videojuegos.html"><h3>Videojuegos</h3></a>
-                <h3>Mangas</h3>
-                <h3>Figuras</h3>
-            </nav>
-        </section>
+                        <div class="producto">
+                            <img src="img/3643384-nier-automata-become-as-gods-edition-xbox-one-front-cover.jpg" alt="Producto 3" class="img-producto">
+                            <h3>Nier Automata BECOME AS GODS Edition
+                            </h3>
+                            <p>Beat 'em up, Accion, Mundo semi abierto...</p>
+                            <p>Precio: $35.000</p>
+                            <button class="btn-favorito">Añadir a Favoritos ❤️</button>
+                            <button class="btn-carrito">Al Carrito 🛒</button>
+                        </div>
+                    </div>
+                </section>
 
-        <section>
-            <h2>Tráilers recientes:</h2>
-            <div class="galeria-trailers"> 
-                <article class="trailer">
-                    <h3>Tráiler de el proximo remake de The Legend Of Zelda: Ocarina Of Time</h3>
-                    <video class="video-trailer" controls>
-                        <source src="video/Zelda Ocarina of time Nintendo Switch 2 - Teaser en Japones Nintendo Direct - Emanu Korok (360p, h264).mp4" type="video/mp4">
-                        Si ves este mensaje, es por que tu navegador no soporta videos.
-                    </video>
-                    <p>El trailer se dio a conocer el pasado 9 junio del 2026. Y hasta la fecha no se tiene mas informacion sobre si mantendra la vieja formula zelda o sera algo mas Breath of the Wild</p>
-                </article>
-            </div>
-        </section>
+                <section>
+                    <h2>Tráilers recientes:</h2>
+                    <div class="galeria-trailers"> 
+                        <article class="trailer">
+                            <h3>Primer tráiler de el proximo remake de The Legend Of Zelda: Ocarina Of Time</h3>
+                            <video class="video-trailer" controls>
+                                <source src="video/Zelda Ocarina of time Nintendo Switch 2 - Teaser en Japones Nintendo Direct - Emanu Korok (360p, h264).mp4" type="video/mp4">
+                                Si ves este mensaje, es por que tu navegador no soporta videos.
+                            </video>
+                            <p>El trailer se dio a conocer el pasado 9 junio del 2026. Y hasta la fecha no se tiene mas informacion sobre si mantendra la vieja formula zelda o sera algo mas Breath of the Wild</p>
+                        </article>
+
+                        <article class="trailer">
+                            <h3>Segundo tráiler de el proximo remake de The Legend Of Zelda: Ocarina Of Time</h3>
+                            <video class="video-trailer" controls>
+                                <source src="video/Trailer ESPAÑOL LATINO ZELDA OCARINA of TIME Nintendo Switch 2 - N Deluxe (360p, h264).mp4" type="video/mp4">
+                                Si ves este mensaje, es por que tu navegador no soporta videos.
+                            </video>
+                            <p>El trailer se dio a conocer en el nintendo direct dedicado a zelda por su 40to aniversario. 
+                                Finalmente se nos muestra gameplay del como se vera el juego, junto con la noticia de que va a contar con dialogos en varios idiomas, entre ellos el español latino. 
+                                Siguiendo asi con la tradicion de que todos los nuevos zeldas lanzados en switch, cuenten con una localizacion y traduccion al español latinoamericano.
+                            </p>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
 
         <footer>
             <p>Tienda A. Página diseñada por Jorge Martinez. 2026</p>
