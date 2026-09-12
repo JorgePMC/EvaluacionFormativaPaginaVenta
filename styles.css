@@ -10,7 +10,11 @@ h2{
 
 p{
     text-align: center;
-    color: #830a0a;
+}
+
+h6{
+    font-size: 15px;
+    color: rgb(151, 0, 0);
 }
 
 a{
@@ -24,6 +28,39 @@ header{
     background-color: #eaeaea;
     justify-content: space-between;
     padding: 10px 20px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+footer{
+    background-color: rgb(255, 118, 39);
+    color: white;
+    padding: 20;
+    text-align: center;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+
+.centrar-body{
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.contenedor-pagina{
+    display: flex;
+}
+
+.barraLateral{
+    width: 175px;
+    background-color: #b3b3b3;
+    padding: 15px;
+    box-sizing: border-box;
 }
 
 /*se borro el input para evitar errores de compatibilidad a futuro*/
@@ -67,7 +104,7 @@ header{
     width: auto;
     display: block;
 }
-
+/*atributos para los productos*/
 .galeria-productos { /*contenedor de productos*/
     display: flex;
     justify-content: center; 
@@ -112,32 +149,7 @@ header{
     width: 100%;
     margin-top: bottom;
 }
-
-.centrar{
-    display: flex;
-    justify-content: center;
-}
-
-.centrar-body{
-    flex-grow: 1;
-    padding: 20px;
-}
-
-body{
-    margin: 0px;
-    padding: 0px;
-}
-
-.contenedor-pagina{
-    display: flex;
-}
-
-.barraLateral{
-    width: 175px;
-    background-color: #b3b3b3;
-    padding: 15px;
-    box-sizing: border-box;
-}
+/*atributos para article y video*/
 .galeria-trailers {
     background-color: #292929;
     display: flex;
@@ -165,14 +177,8 @@ body{
     margin-bottom: 10px;
 }
 
-footer{
-    background-color: rgb(255, 118, 39);
-    color: white;
-    padding: 20;
-    text-align: center;
-}
-/*Crear atributos para la pagina del carrito*/
-#lista-carrito {
+/*atributos para la pagina del carrito*/
+#galeria-carrito {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -219,4 +225,122 @@ footer{
     padding: 8px 10px;
     cursor: pointer;
     width: 100%;
+}
+/*atributos para el registro*/
+.contenedor-formulario {
+    background-color: #eaeaea;
+    max-width: 380px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.contenedor-formulario h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.campo-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.campo-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.campo-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+.campo-form input:focus {
+    border-color: rgb(255, 118, 39);
+}
+
+.btn-submit {
+    background-color: rgb(255, 118, 39);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.mensaje-error {
+    color: rgb(180, 0, 0);
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px 0 15px 0;
+    min-height: 18px;
+}
+
+.error-campo {
+    color: red;
+    font-size: 13px;
+    margin-top: 4px;
+    text-align: left;
+    display: block;
+}
+
+.error-general {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+/*atributos para el perfil*/
+.perfil-card {
+    background-color: #eaeaea;
+    max-width: 400px;
+    margin: 0 auto 30px auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.img-perfil {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid rgb(255, 118, 39);
+}
+
+.btn-logout {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.btn-logout:hover {
+    background-color: #555;
+}
+
+#galeria-favoritos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
 }
