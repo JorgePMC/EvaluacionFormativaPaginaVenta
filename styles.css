@@ -8,6 +8,11 @@ h2{
     margin: 10px;
 }
 
+p{
+    text-align: center;
+    color: #830a0a;
+}
+
 a{
     text-decoration: none;
     color: black;
@@ -35,7 +40,6 @@ header{
 .mensajeSinResultados {
     text-align: center;
     font-size: 30px;
-    color: #5c2207;
     margin: 30px 0;
     font-weight: bold;
 }
@@ -131,7 +135,7 @@ body{
 .barraLateral{
     width: 175px;
     background-color: #b3b3b3;
-    padding: 15px;             
+    padding: 15px;
     box-sizing: border-box;
 }
 .galeria-trailers {
@@ -166,4 +170,53 @@ footer{
     color: white;
     padding: 20;
     text-align: center;
+}
+/*Crear atributos para la pagina del carrito*/
+#lista-carrito {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 0;
+}
+
+.producto-carrito {
+    background-color: #eaeaea;
+    width: 210px;
+    height: 340px;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.img-producto-carrito {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.info-producto-carrito h3 {
+    font-size: 15px;
+    margin: 5px 0;
+}
+
+.info-producto-carrito p {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+
+.btn-eliminar {
+    background-color: rgb(255, 118, 39);
+    color: white;
+    border: none;
+    padding: 8px 10px;
+    cursor: pointer;
+    width: 100%;
 }

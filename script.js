@@ -20,30 +20,31 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('carrito', JSON.stringify(carrito));
         alert(`¡${producto.titulo} fue añadido al carrito!`);
     }
-    //mostrar los productos en el carrito
+    //Argumentar que carrito sera los elementos llamados por la id
     const contenedorCarrito = document.getElementById('lista-carrito');
     if (contenedorCarrito) {
         mostrarCarrito(contenedorCarrito);
     }
-
+    //mostrar los productos en el carrito
     function mostrarCarrito(contenedor) {
         let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
         contenedor.innerHTML = ''; 
+
         if (carrito.length === 0) {
-            contenedor.innerHTML = '<p>El carrito está vacío.</p>';
+            contenedor.innerHTML = '<p class="mensajeSinResultados">El carrito está vacío...</p>';
             return;
         }
 
         carrito.forEach((item, index) => {
             const div = document.createElement('div');
-            div.classList.add('producto-carrito');
+            div.classList.add('producto-carrito'); // Mantenemos la clase de la tarjeta
             div.innerHTML = `
-                <img src="${item.imagen}" width="80">
-                <div>
+                <img src="${item.imagen}" alt="${item.titulo}" class="img-producto-carrito">
+                <div class="info-producto-carrito">
                     <h3>${item.titulo}</h3>
                     <p>${item.precio}</p>
                 </div>
-                <button onclick="eliminarProducto(${index})">Eliminar</button>`;
+                <button class="btn-eliminar" onclick="eliminarProducto(${index})">Eliminar</button>`;
             contenedor.appendChild(div);
         });
     }
@@ -83,3 +84,4 @@ if (inputBusqueda) {
         }
     });
 }
+    /////////////////////////////////
