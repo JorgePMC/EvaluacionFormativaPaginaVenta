@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+    //////////////AÑADIR AL CARRITO/////////////////////
     //Obtener la informacion
     const botonesCarrito = document.querySelectorAll('.btn-carrito');
     botonesCarrito.forEach(boton => {
@@ -53,4 +54,32 @@ function eliminarProducto(index) {
     carrito.splice(index, 1);
     localStorage.setItem('carrito', JSON.stringify(carrito));
     location.reload();
+}
+    //////////////BUSCADOR/////////////////////
+const inputBusqueda = document.getElementById('taskInput');
+const productos = document.querySelectorAll('.producto');
+const mensajeSinResultados = document.getElementById('sinResultados');
+
+if (inputBusqueda) {
+    inputBusqueda.addEventListener('input', () => {
+        const textoBusqueda = inputBusqueda.value.toLowerCase().trim();
+        let coincidencias = 0;
+        productos.forEach(producto => {
+            const titulo = producto.querySelector('h3').textContent.toLowerCase();
+            if (titulo.includes(textoBusqueda)) {
+                producto.style.display = 'flex';
+                coincidencias++;
+            } else {
+                producto.style.display = 'none';
+            }
+        });
+
+        if (mensajeSinResultados) {
+            if (coincidencias === 0) {
+                mensajeSinResultados.style.display = 'block';
+            } else {
+                mensajeSinResultados.style.display = 'none';
+            }
+        }
+    });
 }
